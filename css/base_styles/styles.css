@@ -1,0 +1,54 @@
+@import url("https://ui-feather.netlify.app/styles.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+
+    /* colors */
+    --base-color: #fff;
+    --primary-color: #2C2E43;
+    --secondary-color: #595260;
+    --hover-color: #B2B1B9;
+    --cta-color: #FFD523;
+
+    /* border radius */
+    --border-2: 2px;
+    --border-5: 5px;
+    --border-20: 2rem;
+    --border-round: 50%;
+
+    /* sizes */
+    --size-1px: 1px;
+    --size-2px: 2px;
+    --size-5px: 5px;
+    --size-1r: 1rem;
+    --size-2r: 2rem;
+    --size-80pr: 80%;
+    --size-100pr: 100%;
+
+    /* margins */
+    --mr-1: 1rem;
+    --mr-1-a: 1rem auto;
+    --mr-a: auto;
+    --mr-01: 0 1rem;
+    --mr-10: 1rem 0;
+
+    /* box shadow */
+    --nav-shadow: 0 2px 5px var(--hover-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color);
+}
+
+.pagewrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.shoebox-content {
+    padding: var(--mr-01);
+    flex-grow: 1;
+    margin-top: 14rem;  
+}

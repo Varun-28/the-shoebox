@@ -1,0 +1,17 @@
+@media only screen and (min-width: 800px) {
+    .shoebox-navbar {
+        padding-bottom: 0;
+    }
+
+    .shoebox-navbar nav {
+        grid-template-areas: "logo search links";
+    }
+
+    .search-bar{
+        justify-self: center;
+    }
+
+    main.shoebox-content {
+        margin-top: 8rem;
+    }
+}
