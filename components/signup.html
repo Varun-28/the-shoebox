@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/icon.png">
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="../css/component_styles/signin.css">
+    <link rel="stylesheet" href="../css/component_styles/signup.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/e413b10342.js" crossorigin="anonymous"></script>
@@ -61,24 +61,37 @@
         <main class="shoebox-content login-signup-content">
             <div class="login-signup-form">
                 <div class="login-signup-texts">
-                    <h3 class="login-signup-heading">Login</h3>
-                    <p class="small-text">Enter your credentials to access your account.</p>
+                    <h3 class="login-signup-heading">Create new account</h3>
                 </div>
                 <form>
                     <div class="input-group">
                         <label for="email-input">Email-id : </label>
-                        <input class="validation-input input" id="email-input" type="email" placeholder="xyz@gmail.com">
+                        <input class="validation-input input" id="email-input" type="email">
+                        <p class="login-signup-warning">enter a valid email-id</p>
+                    </div>
+                    <div class="input-group">
+                        <label for="fname-input">First Name : </label>
+                        <input class="validation-input input" id="fname-input" type="text">
+                        <p class="login-signup-warning">enter a valid email-id</p>
+                    </div>
+                    <div class="input-group">
+                        <label for="lname-input">Last Name : </label>
+                        <input class="validation-input input" id="lname-input" type="text">
                         <p class="login-signup-warning">enter a valid email-id</p>
                     </div>
                     <div class="input-group">
                         <label for="password-input">Password : </label>
-                        <input class="validation-input input" id="password-input" type="password"
-                            placeholder="********">
+                        <input class="validation-input input" id="password-input" type="password">
                         <p class="login-signup-warning">password is missing</p>
                     </div>
-                    <button class="btn btn-primary">Log In</button>
+                    <div class="input-group">
+                        <label for="cpassword-input">Confirm Password : </label>
+                        <input class="validation-input input" id="cpassword-input" type="password">
+                        <p class="login-signup-warning">enter a valid email-id</p>
+                    </div>
+                    <button class="btn btn-primary">Register</button>
                 </form>
-                <p class="small-text">Don't have an account ? <a class="link" href="./signup.html">Sign-up</a></p>
+                <p class="small-text">Already have an account ? <a class="link" href="./signin.html">Login</a></p>
             </div>
         </main>
 

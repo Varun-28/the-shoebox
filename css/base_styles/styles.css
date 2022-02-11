@@ -24,6 +24,7 @@
     --size-2r: 2rem;
     --size-80pr: 80%;
     --size-100pr: 100%;
+    --size-font: 1.2rem;
 
     /* margins */
     --mr-1: 1rem;
@@ -34,6 +35,7 @@
 
     /* box shadow */
     --nav-shadow: 0 2px 5px var(--hover-color);
+    --card-shadow: 0 0 5px var(--hover-color);
 }
 
 body {
@@ -50,5 +52,5 @@ body {
 main.shoebox-content {
     padding: var(--mr-01);
     flex-grow: 1;
-    margin-top: 14rem;  
+    margin: 14rem 0 2rem 0;  
 }
