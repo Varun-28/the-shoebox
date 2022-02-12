@@ -27,7 +27,7 @@ body {
     min-width: 30rem;
 }
 
-.login-signup-form>* {
+.login-signup-form >* {
     margin: var(--mr-1-a);
 }
 
