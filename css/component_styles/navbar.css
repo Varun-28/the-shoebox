@@ -10,7 +10,6 @@
     z-index: 10;
     padding: 0 1rem 1rem 1rem;
     background-color: var(--base-color);
-    box-shadow: var(--nav-shadow);
 }
 
 .shoebox-navbar nav {

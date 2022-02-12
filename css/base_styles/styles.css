@@ -36,6 +36,7 @@
     /* box shadow */
     --nav-shadow: 0 2px 5px var(--hover-color);
     --card-shadow: 0 0 5px var(--hover-color);
+    --btn-shadow: 0 0 5px var(var(--cta-color));
 }
 
 body {
@@ -50,7 +51,6 @@ body {
 }
 
 main.shoebox-content {
-    padding: var(--mr-01);
     flex-grow: 1;
     margin: 14rem 0 2rem 0;  
 }
