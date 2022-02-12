@@ -8,3 +8,57 @@ body {
     background-color: #ffffff;
     background-image: url("../../assets/bg.svg");
 }
+
+.login-signup-content {
+    display: grid;
+    place-items: center;
+}
+
+.login-signup-form {
+    background-color: var(--base-color);
+    border-radius: var(--border-5);
+    padding: var(--size-1r);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--card-shadow);
+    min-height: 30rem;
+    min-width: 30rem;
+}
+
+.login-signup-form >* {
+    margin: var(--mr-1-a);
+}
+
+.login-signup-texts {
+    text-align: center;
+}
+
+.login-signup-form .input-group {
+    margin-bottom: var(--size-1r);
+}
+
+.login-signup-form .input-group label {
+    font-size: var(--size-font);
+    margin-bottom: var(--size-5px);
+}
+
+.login-signup-form .input {
+    border-color: var(--hover-color);
+    font-size: var(--size-font);
+    padding: var(--size-5px);
+}
+
+.login-signup-warning {
+    display: none;
+}
+
+.login-signup-form .btn-primary {
+    width: var(--size-100pr);
+    margin: 0;
+}
+
+.link {
+    color: var(--color-info);
+}
