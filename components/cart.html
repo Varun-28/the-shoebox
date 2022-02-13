@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoebox</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/component_styles/cart.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e413b10342.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="pagewrap">
+        <!-- navbar -->
+        <header class="shoebox-navbar">
+            <nav>
+                <!-- logo -->
+                <div class="shoebox-logo">
+                    <a href="../index.html" aria-label="to-home"><img src="../assets/logo_svg.svg"
+                            alt="shoebox-logo"></a>
+                </div>
+                <!-- search bar -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input class="simple-input" id="name-input" type="text" placeholder="Search">
+                    </div>
+                </div>
+                <!-- navbar links -->
+                <ul class="nav-links">
+                    <li><a href="./signin.html" aria-label="to-sign-in">
+                            <button class="btn btn-outline">Sign-in</button>
+                        </a>
+                    </li>
+                    <li><a href="./wishlist.html" aria-label="to-wishlist">
+                            <div class="badge-container">
+                                <i class="shopping-cart fa-regular fa-heart">
+                                    <span class="badge badge-ico">0</span>
+                                </i>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="./cart.html" aria-label="to-cart">
+                            <div class="badge-container">
+                                <i class="shopping-cart fa-solid fa-cart-shopping">
+                                    <span class="badge badge-ico">0</span>
+                                </i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main content -->
+        <main class="shoebox-content cart-content">
+            <h4>My Cart</h4>
+
+            <section class="cart-bill">
+                <h4>Price Details</h4>
+                <span class="hr-line-gray"></span>
+                <div class="price-info">
+                    <p>Price</p>
+                    <p>Rs. 1999</p>
+                </div>
+                <div class="price-info">
+                    <p>Discount</p>
+                    <p>Rs. 500</p>
+                </div>
+                <div class="price-info">
+                    <p>Delivery charges</p>
+                    <p>Rs. 50</p>
+                </div>
+                <span class="hr-line-gray"></span>
+                <div class="price-info">
+                    <p><strong>Total</strong></p>
+                    <p><strong>Rs. 1549</strong></p>
+                </div>
+                <span class="hr-line-gray"></span>
+                <button class="btn btn-primary">Place Order</button>
+            </section>
+
+            <section class="cart-cards">
+                <div class="card card-vertical badged-card">
+                    <div class="card-head">
+                        <div class="card-img">
+                            <img src="../assets/casual_1.webp" alt="card image">
+                        </div>
+                        <div class="card-texts">
+                            <h4 class="card-title">Shoebox<span></span></h4>
+                            <p class="card-subTitle">Casual Male Shoes</p>
+                            <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                    class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                        </div>
+                    </div>
+                    <div class="card-buttons">
+                        <button class="card-btn-primary">Remove From Cart</button>
+                        <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="card-badge">Sale</div>
+                    <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="shoebox-footer">
+            <p>Made with 💖 by Varun Verma</p>
+            <div class="social-links">
+                <a href="https://twitter.com/VarunVerma2828"><i class="fab fa-twitter-square" title="Twitter"></i></a>
+                <a href="https://github.com/Varun-28"><i class="fab fa-github-square" title="Github"></i></a>
+                <a href="https://www.linkedin.com/in/varun-verma-a-budding-engineer/"><i class="fab fa-linkedin"
+                        title="LinkedIn"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
