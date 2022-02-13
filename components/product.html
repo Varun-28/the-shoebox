@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoebox</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/component_styles/product.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e413b10342.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="pagewrap">
+        <!-- navbar -->
+        <header class="shoebox-navbar">
+            <nav>
+                <!-- logo -->
+                <div class="shoebox-logo">
+                    <a href="../index.html" aria-label="to-home"><img src="../assets/logo_svg.svg"
+                            alt="shoebox-logo"></a>
+                </div>
+                <!-- search bar -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input class="simple-input" id="name-input" type="text" placeholder="Search">
+                    </div>
+                </div>
+                <!-- navbar links -->
+                <ul class="nav-links">
+                    <li><a href="./signin.html" aria-label="to-sign-in">
+                            <button class="btn btn-outline">Sign-in</button>
+                        </a>
+                    </li>
+                    <li><a href="./wishlist.html" aria-label="to-wishlist">
+                            <div class="badge-container">
+                                <i class="shopping-cart fa-regular fa-heart">
+                                    <span class="badge badge-ico">0</span>
+                                </i>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="./cart.html" aria-label="to-cart">
+                            <div class="badge-container">
+                                <i class="shopping-cart fa-solid fa-cart-shopping">
+                                    <span class="badge badge-ico">0</span>
+                                </i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main content -->
+        <main class="shoebox-content product-content">
+            <section class="filter-drawer">
+                <div class="filter-head">
+                    <h3>Filters</h3>
+                    <button class="btn btn-outline">Clear</button>
+                </div>
+                
+                <span class="hr-gray-line"></span>
+                <div class="filter category">
+                    <h4>Category</h4>
+                    <label for="male">
+                    <input type="checkbox" value="m" id="male">Male</label>
+                    <label for="female">
+                    <input type="checkbox" value="f" id="female">Female</label>
+                </div>
+                <span class="hr-gray-line"></span>
+                <div class="filter rating">
+                    <h4>Rating</h4>
+                    <label for="four">
+                    <input type="radio" name="rating" value="4" id="four">4 star or above</label>
+                    <label for="three">
+                    <input type="radio" name="rating" value="3" id="three">3 star or above</label>
+                    <label for="two">
+                    <input type="radio" name="rating" value="2" id="two">2 star or above</label>
+                    <label for="one">
+                    <input type="radio" name="rating" value="1" id="one">1 star or above</label>   
+                </div>
+                <span class="hr-gray-line"></span>
+                <div class="filter sort-by">
+                    <h4>Sort by</h4>
+                    <label for="low">
+                    <input type="radio" name="price" value="l" id="low">Price - low to high</label>
+                    <label for="high">
+                    <input type="radio" name="price" value="h" id="high">Price - high to low</label>
+                </div>
+            </section>
+            <section class="product-section">
+                <div class="filter-btn">
+                    <button class="btn btn-fab btn-round" id="btn-filter"><i class="fa-solid fa-filter"></i></button>
+                </div>
+                <div class="product-cards">
+
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/boot_5.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/casual_1.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/casual_1f.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/formal_1.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/boot_1.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/sports_1.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/boot_2.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/sports_5.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/formal_4.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/casual_4f.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/casual_4.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                    <!-- card -->
+                    <div class="card card-vertical badged-card">
+                        <div class="card-head">
+                            <div class="card-img">
+                                <img src="../assets/boot_10.webp" alt="card image">
+                            </div>
+                            <div class="card-texts">
+                                <h4 class="card-title">Moda Rapido <span></span></h4>
+                                <p class="card-subTitle">Wollen Denim Jacket</p>
+                                <p class="card-text"><span class="price-now">Rs. 1499</span><span
+                                        class="price-before">Rs. 1999</span><span class="discount">(25% OFF)</span> </p>
+                            </div>
+                        </div>
+                        <div class="card-buttons">
+                            <button class="card-btn-primary">Add To Cart</button>
+                            <button class="card-btn-icon"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="card-badge">Sale</div>
+                        <div class="card-rating">4.5 <i class="fas fa-star"></i></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="shoebox-footer">
+            <p>Made with 💖 by Varun Verma</p>
+            <div class="social-links">
+                <a href="https://twitter.com/VarunVerma2828"><i class="fab fa-twitter-square" title="Twitter"></i></a>
+                <a href="https://github.com/Varun-28"><i class="fab fa-github-square" title="Github"></i></a>
+                <a href="https://www.linkedin.com/in/varun-verma-a-budding-engineer/"><i class="fab fa-linkedin"
+                        title="LinkedIn"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const filterBtn = document.querySelector("#btn-filter");
+        const filterDrawer = document.querySelector(".filter-drawer");
+        
+        filterBtn.addEventListener("click",() => {
+            if(filterBtn.innerHTML === '<i class="fa-solid fa-filter"></i>'){
+                filterBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            }else{
+                filterBtn.innerHTML = '<i class="fa-solid fa-filter"></i>';
+            }
+            filterDrawer.classList.toggle("invisible");
+        })
+    </script>
+</body>
+
+</html>

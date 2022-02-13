@@ -32,4 +32,19 @@
     section.gender-cards-section  .gender-cards{
         grid-template-columns: 50% 50%;
     }
+
+    main.product-content {
+        grid-template-columns: 20% auto;
+    }
+
+    section.filter-drawer {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    .filter-btn {
+        display: none;
+    }
 }
