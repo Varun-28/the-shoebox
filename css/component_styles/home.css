@@ -1,4 +1,73 @@
 @import url('../base_styles/styles.css');
+@import url('../component_styles/navbar.css');
+@import url('../component_styles/footer.css');
 @import url('../base_styles/media.css');
 
-/* home css */
+/* home page css */
+.home-content {
+    text-align: center;
+}
+
+.hero-content {
+    padding: var(--size-1r);
+}
+
+.hero-content p {
+    margin: var(--mr-10);
+}
+
+.btn-hero {
+    background-color: var(--cta-color);
+    color: var(--primary-color);
+    margin: 3rem 0;
+}
+
+.btn-hero:hover {
+    box-shadow: var(--btn-shadow);
+}
+
+.hero-img img,
+.sale-img img {
+    width: var(--size-80pr);
+    margin: var(--mr-a);
+}
+
+.new-arrival-section {
+    position: relative;
+    z-index: 2;
+    top: -1rem;
+    background-color: var(--primary-color);
+    color: var(--cta-color);
+}
+
+.new-arrival-section .image-container {
+    padding: var(--size-2r);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--size-1r);
+}
+
+.new-arrival-section .image-container img {
+    width: 75%;
+    height: auto;
+    border-radius: var(--border-5);
+}
+
+.new-arrival-section .image-container img:hover {
+    box-shadow: var(--card-shadow);
+}
+
+.gender-cards-section .gender-cards{
+    padding: var(--size-1r);
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+
+.gender-cards-section .card {
+    transition: 0.2s;
+}
+
+.gender-cards-section .card:hover {
+    transform: scale(1.02);
+}

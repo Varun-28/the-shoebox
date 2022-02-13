@@ -16,7 +16,120 @@
 </head>
 
 <body>
-    <p>This is home page</p>
+    <div class="pagewrap">
+        <!-- navbar -->
+        <header class="shoebox-navbar">
+            <nav>
+                <!-- logo -->
+                <div class="shoebox-logo">
+                    <a href="./index.html" aria-label="to-home"><img src="../assets/logo_svg.svg"
+                            alt="shoebox-logo"></a>
+                </div>
+                <!-- search bar -->
+                <div class="search-bar">
+                    <div class="input-group">
+                        <input class="simple-input" id="name-input" type="text" placeholder="Search">
+                    </div>
+                </div>
+                <!-- navbar links -->
+                <ul class="nav-links">
+                    <li><a href="./components/signin.html" aria-label="to-sign-in">
+                            <button class="btn btn-outline">Sign-in</button>
+                        </a>
+                    </li>
+                    <li><a href="./components/wishlist.html" aria-label="to-wishlist">
+                            <div class="badge-container">
+                                <i class="shopping-cart fa-regular fa-heart">
+                                    <span class="badge badge-ico">0</span>
+                                </i>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="./components/cart.html" aria-label="to-cart">
+                            <div class="badge-container">
+                                <i class="shopping-cart fa-solid fa-cart-shopping">
+                                    <span class="badge badge-ico">0</span>
+                                </i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- main content -->
+        <main class="shoebox-content home-content">
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Shoes from which you shine through.</h1>
+                    <p>The journey begins with the perfect pair.</p>
+                    <a href="./components/product.html"><button class="btn btn-primary btn-hero">Shop Now</button></a>
+                </div>
+                <div class="hero-img">
+                    <img src="./assets/Price-rafiki.svg" alt="hero-image">
+                </div>
+            </section>
+
+            <img src="./assets/wave.svg" alt="wave">
+            <section class="new-arrival-section">
+                    <h3>New Arrivals</h3>
+                    <div class="image-container">
+                        <div class="img-1"><a href="./components/product.html"><img src="./assets/boot_1.webp" alt="image-1"></a></div>
+                        <div class="img-2"><a href="./components/product.html"><img src="./assets/casual_3.webp" alt="image-2"></a></div>
+                        <div class="img-3"><a href="./components/product.html"><img src="./assets/formal_1.webp" alt="image-3"></a></div>
+                        <div class="img-4"><a href="./components/product.html"><img src="./assets/casual_4f.webp" alt="image-4"></a></div>
+                    </div>
+            </section>
+
+            <section class="gender-cards-section">
+                <h3>Shop by Category</h3>
+
+                <div class="gender-cards">
+                    <!-- vertical card -->
+                    <a href="./components/product.html">
+                        <div class="card card-vertical card-shadow">
+                            <div class="card-head">
+                                <div class="card-img">
+                                    <img src="./assets/boot_9.webp" alt="card image">
+                                </div>
+                                <div class="card-texts">
+                                    <h4 class="card-title">Male</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- vertical card -->
+                    <a href="./components/product.html">
+                        <div class="card card-vertical card-shadow">
+                            <div class="card-head">
+                                <div class="card-img">
+                                    <img src="./assets/sports_4.webp" alt="card image">
+                                </div>
+                                <div class="card-texts">
+                                    <h4 class="card-title">Female</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="shoebox-footer">
+            <p>Made with 💖 by Varun Verma</p>
+            <div class="social-links">
+                <a href="https://twitter.com/VarunVerma2828" target="_blank"><i class="fab fa-twitter-square"
+                        title="Twitter"></i></a>
+                <a href="https://github.com/Varun-28" target="_blank"><i class="fab fa-github-square"
+                        title="Github"></i></a>
+                <a href="https://www.linkedin.com/in/varun-verma-a-budding-engineer/" target="_blank"><i
+                        class="fab fa-linkedin" title="LinkedIn"></i></a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
