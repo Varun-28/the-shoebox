@@ -57,7 +57,7 @@
     box-shadow: var(--card-shadow);
 }
 
-.gender-cards-section {
+.gender-cards-section .gender-cards{
     padding: var(--size-1r);
     display: grid;
     grid-template-columns: 100%;

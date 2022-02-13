@@ -25,11 +25,11 @@
         margin: 3rem 0 0 1rem;
     }
 
-    .new-arrival-section .image-container{
-        grid-template-columns: repeat(4, 1fr) !important;
+    section.new-arrival-section .image-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .gender-cards-section{
-        grid-template-columns: 50% 50% !important;
+    section.gender-cards-section  .gender-cards{
+        grid-template-columns: 50% 50%;
     }
 }
