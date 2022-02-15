@@ -1,0 +1,36 @@
+@import url('../base_styles/styles.css');
+@import url('../component_styles/navbar.css');
+@import url('../component_styles/footer.css');
+@import url('../base_styles/media.css');
+
+/* cart css */
+.cart-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.cart-cards .card{
+    box-shadow: var(--card-shadow);
+}
+
+.hr-line-gray{
+    display: block;
+    width: 100%;
+    border-top: 2px solid var(--hover-color);
+    margin: 5px auto;
+}
+
+.cart-bill{
+    text-align: center;
+    width: 30rem;
+    box-shadow: var(--card-shadow);
+    padding: 1rem;
+}
+
+.price-info{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
