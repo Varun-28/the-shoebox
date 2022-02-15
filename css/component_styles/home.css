@@ -10,6 +10,9 @@
 
 .hero-content {
     padding: var(--size-1r);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-content p {
